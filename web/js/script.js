@@ -21,7 +21,7 @@ jQuery(document).ready(function(){
 	spybug.spy("Initializing the timeglider plugin...");
 	var tg1 = jQuery("#placement").timeline({
 		"min_zoom":18,
-		"max_zoom":55, 
+		"max_zoom":55,
 		"data_source":"#mylife"
 	});
 	spybug.spy("Done initializing the timeglider plugin!");

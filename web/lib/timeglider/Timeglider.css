@@ -2,36 +2,36 @@
 /* CSS Document */
 
 .timeglider-container {
-	
+
 	position:relative;
-  overflow:hidden;
+	overflow:hidden;
 	border:2px solid black;
 	font-family:Helvetica, Arial, sans-serif;
 	-moz-border-radius:7px;
 	-webkit-border-radius:7px;
 	border-radius:7px;
 	background-color:#F4F4F4;
-  }
-  
+}
+
 
 /* Slightly darker than the larger stage, in .timeglider-container */
 .timeglider-slider-container {
     background-color:#DDD;
-  }
+}
 .timeglider-loading {
-  background-color:black;
-  color:white;
-  font-size:12px;
-  font-weight:bold;
-  width:100px;
-  padding:12px;
-  -moz-border-radius:7px;
+	background-color:black;
+	color:white;
+	font-size:12px;
+	font-weight:bold;
+	width:100px;
+	padding:12px;
+	-moz-border-radius:7px;
 	-webkit-border-radius:7px;
 	border-radius:7px;
 	margin:12px auto 12px auto;
 	text-align:center;
 }
-  
+
 .timeglider-footer {
 	position:absolute;
 	bottom:0px;
@@ -42,7 +42,7 @@
 	color:#ccc;
 	font-size:10px;
 	padding:3px;
-	
+
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#444444'); 
 	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
 	background: -moz-linear-gradient(top,  #000,  #444);
@@ -52,8 +52,8 @@
 
 .timeglider-footer ul {
 	list-style:none;
-	}
-	
+}
+
 .timeglider-footer ul li {
 	display:inline;
 	cursor:pointer;
@@ -93,68 +93,68 @@
 /* Correction of aristo ui css */
 .ui-slider-vertical .ui-slider-handle { 
     left:0;margin-left: -.6em; margin-bottom: -.6em; 
-    }
+}
 
 .timeglider-slider-container {
-  width:24px;
-  padding-left:16px;
+	width:24px;
+	padding-left:16px;
 	position:absolute;
 	height:auto;
 	z-index:10;
 	top:2px;
 	right:2px;
 	padding-top:8px;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-bottom-left-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -moz-border-radius-bottomleft: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  }
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-bottomleft: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
 
 .timeglider-slider { 	/* style set in jQuery UI css file */   }
-  
+
 .timeglider-zoomlevel-display {
-  font-size:.8em;
-  color:#83A0C5;
-  width:20px;
-  text-align:center;
-  background-color:#FFF;
-  -moz-border-radius:4px;
-  border-radius:4px;
-  -webkit-border-radius:4px;
-  padding:3px;
-  margin-top:3px;
-  margin-left:-10px;
-  margin-bottom:4px;
+	font-size:.8em;
+	color:#83A0C5;
+	width:20px;
+	text-align:center;
+	background-color:#FFF;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	padding:3px;
+	margin-top:3px;
+	margin-left:-10px;
+	margin-bottom:4px;
 }
 
 
 .timeglider-pan-buttons a {
-  cursor:pointer;
+	cursor:pointer;
 }
 
-  
+
 .timeglider-centerline {
-  	border-left:1px dashed #CCC;
-	  position:absolute;
-	  margin:0px auto 0px auto;
+	border-left:1px dashed #CCC;
+	position:absolute;
+	margin:0px auto 0px auto;
 }
-  
-  
+
+
 .timeglider-truck {
-   position:relative;
+	position:relative;
 }
- 
-  
+
+
 .timeglider-ticks {
 	top:0px;
 	position:relative;
 	height:900px;
- }
-  
+}
+
 .timeglider-tick {
-  /* defaults on arrival in ticks */
+	/* defaults on arrival in ticks */
 	position:absolute;
 	height:30px;
 	font-size:11px;
@@ -165,52 +165,52 @@
 }
 
 .timeglider-tick-label {
-  text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
- 	color:#333;
- 	position:absolute;
-  top:4px;
-  left:4px;
-  font-weight:bold;
- }
- 
-.timeglider-tick-hour-label {
- float:left;
- color:#F0F0F0;
- display:inline;
- /* This padding-left needs to be exactly the same as
-    the value in TG_TimelineView addTick() for setting hour labels
- */
- padding-left:4px;
- font-size:9px;
- margin:0;
+	text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+	color:#333;
+	position:absolute;
+	top:4px;
+	left:4px;
+	font-weight:bold;
 }
-  
+
+.timeglider-tick-hour-label {
+	float:left;
+	color:#F0F0F0;
+	display:inline;
+	/* This padding-left needs to be exactly the same as
+	   the value in TG_TimelineView addTick() for setting hour labels
+	*/
+	padding-left:4px;
+	font-size:9px;
+	margin:0;
+}
+
 .timeglider-handle {
-		position:absolute;
-		top:0px;
-		height:1000px;
-		width:100%;
-		
-		filter:alpha(opacity=1);
-		-moz-opacity:0.01;
-		-khtml-opacity: 0.01;
-		opacity: 0.01;
-		
-		cursor:move;
-		
-	}
-	
+	position:absolute;
+	top:0px;
+	height:1000px;
+	width:100%;
+
+	filter:alpha(opacity=1);
+	-moz-opacity:0.01;
+	-khtml-opacity: 0.01;
+	opacity: 0.01;
+
+	cursor:move;
+
+}
+
 
 
 .timeglider-menu-shown {
-      display:block;
-  }
+	display:block;
+}
 
 .timeglider-menu-hidden {
     display:none;
 }
 
- 
+
 /* JUST A SHADOW TO ADD TO CLASSES */
 .tg-modal, .timeglider-event-hover-info, .timeglider-menu-modal {
 	-moz-box-shadow: 3px 3px 4px #333;
@@ -234,7 +234,7 @@
 }
 
 .timeglider-close-button-small {
-  float:right;
+	float:right;
 	cursor:pointer;
 
 	width:15px;
@@ -265,96 +265,96 @@
 }
 
 .timeglider-timeline-event:hover .timeglider-event-image-layout img {
-  border:1px solid #CC0000;
+	border:1px solid #CC0000;
 }
 
 .timeglider-event-hover-info {
-  position:absolute;
-  left:-1000px;
-  border:1px solid #FFF;
-  background-color:white;
-  padding:3px 6px 3px 6px;
-  min-width:120px;
-  font-size:.7em;
-  z-index:100;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-top-left-radius: 6px;
-  -webkit-border-bottom-right-radius: 6px;
-  -moz-border-radius-topright: 6px;
-  -moz-border-radius-topleft: 6px;
-  -moz-border-radius-bottomright: 6px;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius:6px;
+	position:absolute;
+	left:-1000px;
+	border:1px solid #FFF;
+	background-color:white;
+	padding:3px 6px 3px 6px;
+	min-width:120px;
+	font-size:.7em;
+	z-index:100;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-bottomright: 6px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-right-radius:6px;
 }
 
 .tg-event-hovered .timeglider-event-title {
-  color:#CC0000;
+	color:#CC0000;
 }
 
 
 .timeglider-event-image-bar {
-  /* placed in a div in the timeline bar */
-  width:22px;
-  height:22px;
-  overflow:hidden;
-  position:absolute;
-  border:1px solid #333;
-  top:-28px;
-  z-index:1;
+	/* placed in a div in the timeline bar */
+	width:22px;
+	height:22px;
+	overflow:hidden;
+	position:absolute;
+	border:1px solid #333;
+	top:-28px;
+	z-index:1;
 }
 .timeglider-event-image-bar img {
-  height:24px;
-  width:auto;
+	height:24px;
+	width:auto;
 }
 
 
 .timeglider-event-image-above {
-  /* placed in a div floating just below the "ceiling" */
-   position:absolute;
-   /* top:-28px; */
-   z-index:1;
+	/* placed in a div floating just below the "ceiling" */
+	position:absolute;
+	/* top:-28px; */
+	z-index:1;
 }
 .timeglider-event-image-above img {
-  height:48px;
-  width:auto;
+	height:48px;
+	width:auto;
 }
 
 
 .timeglider-event-image-layout {
-  /* div for default fullsize image with event */
-  position:absolute;
-  
+	/* div for default fullsize image with event */
+	position:absolute;
+
 }
 
 .timeglider-event-image-layout img {
-  position:absolute;
+	position:absolute;
 }
 
 .tg-timeline-env-buttons {
-  color:#FFF;
-  cursor:pointer;
+	color:#FFF;
+	cursor:pointer;
 	font-size:10px;
 	margin-top:4px;
 	background-color:#555;
 	font-weight:normal;
 	padding:2px 0 2px 6px;
-	
+
 	-webkit-border-bottom-right-radius: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -moz-border-radius-bottomleft: 4px;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  
-  width:112px;
-  text-shadow:none;
-  
+	-webkit-border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+
+	width:112px;
+	text-shadow:none;
+
 }
 
 
 .tg-timeline-env-buttons .expand-collapse, .tg-timeline-env-buttons .timeline-info {
-  margin-right:12px;
+	margin-right:12px;
 }
 
 .timeglider-event-icon {
@@ -370,7 +370,7 @@
 	margin-right:6px;
 }
 .timeglider-list-bt {
-  cursor:pointer;
+	cursor:pointer;
 	margin-right:12px;
 	float:right;
 }
@@ -384,14 +384,14 @@
 
 
 .timeglider-menu-modal {
-  position:absolute;
-  background-color:#111;
+	position:absolute;
+	background-color:#111;
 	border-radius:6px;
 	-moz-border-radius:6px;
 	-webkit-border-radius:6px;
 	z-index:20;
 	padding:2px;
-	
+
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#555555', endColorstr='#000000'); /* for IE */
 	background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#000)); /* for webkit browsers */
 	background: -moz-linear-gradient(top,  #555,  #000); /* for firefox 3.6+ */
@@ -399,8 +399,8 @@
 }
 
 .timeglider-menu-modal  h3 {
-  float:left;
-  width:100px;
+	float:left;
+	width:100px;
 	font-size:14px;
 	margin:6px 0px 3px 4px;
 	font-weight:bold;
@@ -419,7 +419,7 @@
 	height:30px;
 	background-image:url(buttons/close.png);
 }
-	
+
 
 .timeglider-menu-modal-point-right {
     width:20px;
@@ -433,11 +433,11 @@
 
 
 .timeglider-pan-buttons {
-  margin-top:4px;
-  margin-bottom:6px;
-  height:18px;
-  width:32px;
-  margin-left:-12px;
+	margin-top:4px;
+	margin-bottom:6px;
+	height:18px;
+	width:32px;
+	margin-left:-12px;
 }
 
 .timeglider-pan-left, .timeglider-pan-right {
@@ -448,11 +448,11 @@
     cursor:pointer;
 }
 .timeglider-pan-left {
-  background-image:url("buttons/pan_left.png");
-  margin-right:1px;
+	background-image:url("buttons/pan_left.png");
+	margin-right:1px;
 }
 .timeglider-pan-right {
-  background-image:url("buttons/pan_right.png");
+	background-image:url("buttons/pan_right.png");
 }
 /* add hover effects? */
 
@@ -482,13 +482,13 @@
 
 .timeglider-menu-modal-content {
     clear:both;
-		background-color:#FFF;
-		border-radius:3px;
-		-moz-border-radius:3px;
-		-webkit-border-radius:3px;
-		margin:3px;
-		padding:6px 8px 8px 8px;
-		
+	background-color:#FFF;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	margin:3px;
+	padding:6px 8px 8px 8px;
+
 }
 
 
@@ -499,105 +499,105 @@
 }
 
 .timeglider-menu-modal ul li {
-		font-size:11px;
-		margin:3px 0 3px 0;
-		padding:3px 0 3px 0;
-		cursor:pointer;
-		color:#666;
-	}
+	font-size:11px;
+	margin:3px 0 3px 0;
+	padding:3px 0 3px 0;
+	cursor:pointer;
+	color:#666;
+}
 
 
 
 .timeglider-timeline-menu {
-		width:200px;
+	width:200px;
 }
-  
+
 .timeglider-timeline-menu ul li.activeTimeline {
-  	color:#000;
+	color:#000;
 }
 
 .timeglider-legend {
-  position:absolute;
-  width:150px;
-  -webkit-border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -moz-border-radius-topright: 0;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+	position:absolute;
+	width:150px;
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
 
 .timeglider-legend img {
-  width:12px;
-  height:auto;
-  margin-right:8px;
+	width:12px;
+	height:auto;
+	margin-right:8px;
 }
 
 .timeglider-legend .timeglider-menu-modal-content {
-  margin-top:8px;
+	margin-top:8px;
 }
 
 .timeglider-legend ul li {
-  color:#999;
+	color:#999;
 }
 .timeglider-legend ul li.tg-legend-icon-selected {
-  color:#000;
+	color:#000;
 }
 
 .timeglider-legend-all {
-  float:right;
-  font-size:9px;
-  color:#777;
-  cursor:pointer;
-  margin-right:12px;
-  margin-top:-4px;
+	float:right;
+	font-size:9px;
+	color:#777;
+	cursor:pointer;
+	margin-right:12px;
+	margin-top:-4px;
 }
 
 
 
 .timeglider-filter-box {
-  width:200px;
+	width:200px;
 }
 
 .timeglider-filter-box ul{
-  list-style:none;
-  text-align:right;
+	list-style:none;
+	text-align:right;
 }
 
 .timeglider-filter-box ul li {
-  display:inline;
-  margin:2px 12px 2px 0px;
-  cursor:pointer;
-  color:green;
-  font-weight:bold;
+	display:inline;
+	margin:2px 12px 2px 0px;
+	cursor:pointer;
+	color:green;
+	font-weight:bold;
 }
 
 .timeglider-formline#bottom {
-  margin-bottom:12px;
+	margin-bottom:12px;
 }
 
 .timeglider-formline {
-  margin-bottom:4px;
-  color:#555;
-  font-size:10px;
-  float:right;
+	margin-bottom:4px;
+	color:#555;
+	font-size:10px;
+	float:right;
 }
 .timeglider-formline input {
-  padding:4px;
-  font-size:10px;
-  color:#333;
-  border:1px dotted #333;
-  background-color:#FFF;
+	padding:4px;
+	font-size:10px;
+	color:#333;
+	border:1px dotted #333;
+	background-color:#FFF;
 }
 
 
 .box-visible {
-  display:block;
+	display:block;
 }
 
 .timeglider-event-spanner {
-  position:absolute;
-  background-color:#ccc;
+	position:absolute;
+	background-color:#ccc;
 	height:16px;
 	z-index:1;
 	padding:2px;
@@ -606,7 +606,7 @@
 	-webkit-border-radius:3px;
 	-moz-border-radius:3px;
 	border-radius:3px;
-	
+
 }
 
 .timeglider-event-title {
@@ -630,7 +630,7 @@
  * override this with Timeglider_full_modal.css to make modal full-window
 */
 .timeglider-ev-modal, .timeglider-timeline-modal {
-  -webkit-border-radius:5px;
+	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:7px;
 	background:#FFF;
@@ -640,7 +640,7 @@
 }
 
 .timeglider-ev-video-modal {
-  -webkit-border-radius:5px;
+	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:7px;
 	background:#FFF;
@@ -662,11 +662,11 @@
 }
 
 .timeglider-ev-modal p img, .timeglider-timeline-modal p img{
-  width:100px;
-  height:auto;
-  float:left;
-  margin-right:8px;
-  margin-bottom:8px;
+	width:100px;
+	height:auto;
+	float:left;
+	margin-right:8px;
+	margin-bottom:8px;
 }
 
 .timeglider-ev-modal h4, .timeglider-timeline-modal h4  {
@@ -696,7 +696,7 @@ ul.timeglider-ev-modal-links li {
 	border-right:1px dotted #CCC;
 }
 ul.timeglider-ev-modal-links li a {
-  color:#374b99;
+	color:#374b99;
 }
 
 /* END timeglider-ev-modal */
@@ -706,10 +706,10 @@ ul.timeglider-ev-modal-links li a {
 
 
 .timeglider-more-plus {
-  position:absolute;
-  color:#A4DD90;
-  font-weight:bold;
-  font-size:10px;
-  cursor:pointer;
+	position:absolute;
+	color:#A4DD90;
+	font-weight:bold;
+	font-size:10px;
+	cursor:pointer;
 }
 
