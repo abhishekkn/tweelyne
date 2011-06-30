@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Smashing HTML5!</title>
+		<title>tweelyne</title>
 		<!-- lib -->
         <!-- jQuery & jQuery UI -->
         <script type="text/javascript" src="lib/jQuery/js/jquery-1.5.1.min.js">
@@ -11,7 +11,6 @@
         </script>
         <link rel="stylesheet" href="lib/jQuery/css/ui-lightness/jquery-ui-1.8.11.custom.css">
         </link>
-
         <!-- /jQuery & jQuery UI -->
         <!-- SpyBug -->
         <script type="text/javascript" src="lib/SpyBug/SpyBug.min.1.0.0.js">
@@ -24,7 +23,8 @@
         <!-- /js -->
 
         <!-- css -->
-		<link rel="stylesheet" href="css/style.css"></link>
+		<link rel="stylesheet" href="css/main.css"></link>
+		<link rel="stylesheet" href="css/app.css"></link>
         <!-- /css -->
 
 		<!-- [if IE]>
@@ -40,6 +40,44 @@
 		<![endif] -->
 	</head>
 	<body id="index" class="home">
+
+		<header id="banner" class="body">
+			<h1><a href="#">tweelyne<strong>See your tweets on a timeline!</strong></a></h1>
+			<nav><ul>
+					<li class="active"><a href="#">home</a></li>					
+					<li><a href="#">about</a></li>
+				</ul></nav>
+		</header><!-- /#banner -->
+
+		<section id="timeline" class="body"><article>
+				<figure>
+					<img src="images/temp/sm-logo.gif" alt="Image" />
+				</figure>
+				<hgroup>
+					<h2>
+						<label for="username">What's your twitter name?</label>
+						<input type="text" name="username" id="username">
+					</h2>
+				</hgroup>				
+				<div id="placement">
+					<!-- Timeline widget -->
+				</div>
+			</article>
+		</section><!-- /#timeline -->
 		
+		<footer id="contentinfo" class="body">
+			<address id="about" class="vcard body">
+				<span class="primary">
+					<strong><a href="#" class="fn url">tweelyne</a></strong>
+					<span class="role">Your tweets on a timeline!</span>
+				</span><!-- /.primary -->
+
+				<img src="images/avatar.gif" alt="" class="photo" />
+				<span class="bio">tweelyne shows your tweets on a timeline!</span>
+			</address><!-- /#about -->
+
+			<p>&copy; 2011 <a href="http://github.com/abhishekkn">Abhishek KN</a>.</p>
+		</footer><!-- /#contentinfo -->
+
 	</body>
 </html>
