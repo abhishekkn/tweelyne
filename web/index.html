@@ -5,7 +5,7 @@
 		<title>tweelyne</title>
 		<!-- lib -->
         <!-- jQuery & jQuery UI -->
-        <script type="text/javascript" src="lib/jQuery/js/jquery-1.5.1.min.js">
+        <script type="text/javascript" src="lib/jQuery/js/jquery-1.4.4.min.js">
         </script>
         <script type="text/javascript" src="lib/jQuery/js/jquery-ui-1.8.11.custom.min.js">
         </script>
@@ -22,9 +22,12 @@
         </script>
 		<!-- /Timeglider -->
         <!-- /lib -->
-        <!-- js -->
-        <script type="text/javascript" src="js/script.js">
-        </script>
+        
+		<!-- js -->
+        
+		<script type="text/javascript" src="js/netw.js"></script>
+		<script type="text/javascript" src="js/process.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
         <!-- /js -->
 
         <!-- css -->
@@ -60,50 +63,14 @@
 				</figure>
 				<hgroup>
 					<h2>
-						<label for="username">What's your twitter name?</label>
-						<input type="text" name="username" id="username">
-					</h2>
-				</hgroup>				
-				<!-- TIMEGLIDER PLACEMENT: Put the intended location for the timeline  
-     directly above the data table -->
-				<div id='placement'></div>
-				<!-- TABLE ATTRIBUTES: The id of the table is what you use to reference the data
-					 source in the jQuery widget code; other attributes relate to the timeline itself
-					 where it focuses in time, and how to set up the zoom level. -->
-				<table class='timeline-table' id="mylife" focus_date="1985-06-12"
-					   title="my life" initial_zoom="48" description="The Wild and Wooly times of Michael Richardson.">
-					<!-- The first row of the table is reserved for meta-data.
-						
-						 Class values below are *critical* for mapping out data from the 
-						 <td> elements that follow ---  though order is not important.
-						 The text in <td> elements is *not* critical: just the class names.
-					-->
-					<tr>
-						<th class="tg-startdate">start date</th>
-						<th class="tg-enddate">end date</th>
-						<th class="tg-title">title</th>
-						<th class="tg-description">description</th>
-						<th class="tg-icon">icon</th>
-						<th class="tg-importance">importance</th>
-						<th class="tg-link">link</th>	
-					</tr>
-
-
-					<!-- EVENTS ARE IN THE 2nd+ ROWS OF THE TABLE. While appropriate for viewing
-						 as a visual table, order of rows is not important. 
-					-->
-					<tr>
-						<td>1968-08-20</td>
-						<td></td>
-						<td>Born</td>
-						<td>Valley hospital in Ridgewood, NJ, to Martha & Steve Richardson.</td>
-						<td>circle_green.png</td>
-						<td>50</td>
-						<td>http://www.ridgewoodnj.net/main.cfm</td>
-					</tr>
-					<!-- more event rows here -->
-
-				</table>
+						<label for="username">What's your twitter name?</label>						
+					</h2>		
+				</hgroup>
+				<input type="text" name="username" id="username" />
+				<input type="button" name="go" id="go" value="Go!"/>
+				<div id="timeline-html">
+				
+				</div>
 			</article>
 		</section><!-- /#timeline -->
 
