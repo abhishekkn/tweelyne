@@ -1,6 +1,7 @@
-<PROJECT NAME>
-Version <VERSION NUMBER>
+tweelyne
+version 1.0
 
-Developed by <DEVELOPER NAME>
+See your tweets on a timeline!
 
-Copyright, <YEAR>
+Developed by Abhishek KN
+Copyright, 2011
